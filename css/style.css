@@ -36,3 +36,16 @@ body{
 .background{
     z-index: 0;
 }
+#tree1{
+    width: 57px;
+    height: 71px;
+    left: 13px;
+    top: 446px;
+}
+#door{
+    width: 25px;
+    height: 30px;
+    left: 86px;
+    top: 364px;
+    background-color: #fff;
+}
