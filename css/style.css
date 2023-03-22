@@ -1,6 +1,37 @@
-*{
+body{
     background-color: black;
     color: #fff;
     margin: 0;
     padding: 0;
+    display: grid;
+    grid-template-columns: auto 700px auto;
+}
+#mainTitle{
+    grid-row-start: 1;
+    grid-column-start: 2;
+    text-align: center;
+}
+#gameWindow{
+    width: 700px;
+    height: 700px;
+    background-color: blue;
+    grid-row-start:2;
+    grid-column-start: 2;
+    position: relative;
+}
+#mainCharacter{
+    left: 92px;
+    top: 402px;
+}
+.gameObject{
+    position: absolute;
+}
+.foreground{
+    z-index: 2;
+}
+.gameCharacter{
+    z-index: 1;
+}
+.background{
+    z-index: 0;
 }
