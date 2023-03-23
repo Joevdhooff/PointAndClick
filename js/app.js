@@ -3,6 +3,9 @@ document.getElementById("mainTitle").innerText = "Point And Click Adventure"
 const gameWindow = document.getElementById("gameWindow");
 const mainCharacter = document.getElementById("mainCharacter");
 const offsetCharacter = 7;
+const doorMessage = document.getElementById("doorAlert");
+var audio = new Audio("http://music.ogg");
+
 
 gameWindow.onclick = function(e){
     var rect = gameWindow.getBoundingClientRect();
@@ -14,12 +17,14 @@ gameWindow.onclick = function(e){
     mainCharacter.style.top = y - offsetCharacter + "px";
     switch(e.target.id){
         case "door":
-            console.log("deur")
+            doorMessage.style.display = "flex";
             break;
         case "tree1":
             console.log("boom")
             break;
         default:
-            console.log("Helemaal mee eens")
+            doorMessage.style.display = "none";
     }
 }
+
+

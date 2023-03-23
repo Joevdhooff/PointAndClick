@@ -20,6 +20,8 @@ body{
     position: relative;
 }
 #mainCharacter{
+    width: 14px;
+    height: 15px;
     left: 92px;
     top: 402px;
     transition: all 1s ease-out;
@@ -48,4 +50,20 @@ body{
     left: 86px;
     top: 364px;
     background-color: #fff;
+}
+#doorAlert{
+    z-index: 5;
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    background-color: #fff;
+    font-size: 12px;
+    color: black;
+    top: 300px;
+    left: 100px;
+    border-radius: 7px;
+    padding: 2px;
 }
