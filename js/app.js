@@ -39,13 +39,12 @@ gameWindow.onclick = function(e){
 }
 
 function showMessage(targetBalloon, message) {
-    targetBalloon.style.opacity = "1";
-    targetBalloon.innerHTML = message;
+    mainCharacterSpeech.innerHTML = message;
+    mainCharacterSpeech.style.opacity = 1;
     setTimeout(hideMessage, 4 * sec, targetBalloon);
 }
-
-function hideMessage(targetBalloon) {
-    targetBalloon.style.opacity = "0";
-    targetBalloon.innerHTML = "...";
+function hideMessage() {
+    mainCharacterSpeech.style.opacity = 0;
+    mainCharacterSpeech.innerHTML = "...";
 }
 
