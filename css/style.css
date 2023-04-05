@@ -19,6 +19,13 @@ body{
     grid-column-start: 2;
     position: relative;
 }
+#map{
+    width: 700px;
+    height: 700px;
+    grid-row-start:2;
+    grid-column-start: 2;
+    position: relative;
+}
 #mainCharacter{
     width: 14px;
     height: 15px;
@@ -38,8 +45,8 @@ body{
 .background{
     z-index: 0;
 }
-#tree1{
-    width: 57px;
+#keyTree{
+    width: 58px;
     height: 71px;
     left: 13px;
     top: 446px;
@@ -99,4 +106,17 @@ body{
     opacity: 0;
     width: 300px;
     transition: all 1s ease-in-out;
+}
+#counterSpeech {
+    top: 0px;
+    right: 80px;
+    z-index: 5;
+}
+
+#counterCharacter {
+    width: 150px;
+    bottom: 0px;
+    right: 0px;
+    opacity: 0;
+    z-index: 4;
 }

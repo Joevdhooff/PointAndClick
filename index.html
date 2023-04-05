@@ -15,12 +15,13 @@
             <div id="setMainDialog">
                 <img id="hero" class="foreground" src="img/portrait.png" alt="portrait">
                 <div id="mainCharacterSpeech" class="foreground speech-bubble">...</div>
-
+                <div id="counterSpeech" class="gameObject foreground speech-bubble">...</div>
+                <img id="counterCharacter" class="gameObject foreground" src="img/CounterCharacter.png" alt="counter character">
                 <div id="brownBar"></div>
             </div>
         </div>
         <!--foreground layer-->
-        <div id="tree1" class="gameObject foreground">
+        <div id="keyTree" class="gameObject foreground">
             <img src="img/tree.png" alt="">
         </div>
         <div id="door" class="gameObject foreground">
@@ -32,9 +33,17 @@
         </div>
         <!--background layer-->
         <div id="tilemap" class="gameObject background">
-            <img  src="img/tilemap2.png" alt="">
+            <img id="map" src="img/tilemap2.png" alt="">
         </div>
     </div>
+
+    <!--audio-->
+    <audio id="characterAudio">
+        <source src="audio/audio_Gibberish - Sound Effect_01.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="counterAudio">
+        <source src="audio/audio_high pitch voice.mp3" type="audio/mpeg">
+    </audio>
 
      <script src="js/app.js"></script>
 </body>
