@@ -49,21 +49,54 @@ body{
     height: 30px;
     left: 86px;
     top: 364px;
-    background-color: #fff;
 }
-#doorAlert{
-    z-index: 5;
+#dialogBar {
+    bottom: 0px;
+}
+
+#setMainDialog {
+    position: relative;
+    height: 64px;
+    width: 700px;
+}
+
+#brownBar {
     position: absolute;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 50px;
-    background-color: #fff;
+    height: 32px;
+    width: 700px;
+    background-color: #442c1c;
+    bottom: 0px;
+}
+
+#hero {
+    left: 0px;
+    bottom: 0px;
+}
+
+#mainCharacterSpeech {
+    left: 64px;
+    top: 0px;
+}
+
+#counterCharacter {
+    right: 0px;
+    bottom: 0px;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.foreground {
+    position: absolute;
+    z-index: 1000;
+}
+
+.speech-bubble {
+    background: #ffffff;
+    border-radius: 60px;
+    color: #000;
+    padding: 5px 5px 5px 20px;
     font-size: 12px;
-    color: black;
-    top: 300px;
-    left: 100px;
-    border-radius: 7px;
-    padding: 2px;
+    opacity: 0;
+    width: 300px;
+    transition: all 1s ease-in-out;
 }
