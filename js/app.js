@@ -35,7 +35,6 @@ gameWindow.onclick = function(e){
             case "door":
                 if(gotKey === true){
                     showMessage(mainCharacterSpeech, characterAudio, "I have unlocked this door!...");
-                    tree.style.opacity = 0;
                     tilemap.src = "img/InsideHouseTileMap.png";
                 }
                 else{
@@ -49,7 +48,7 @@ gameWindow.onclick = function(e){
                 }
                 
                 break;
-            case "keyTree":
+            case "tree":
                 //IMPORTANT!!!!
                 // I dont know why but only when i click somewhere near the edge of the tree it wil do something.
                 console.log("this is a tree");
